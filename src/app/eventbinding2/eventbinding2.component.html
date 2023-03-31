@@ -1,0 +1,21 @@
+<p>eventbinding2 works!</p>
+<input #inputname type="text" placeholder="enter the name">
+&nbsp;&nbsp; &nbsp;
+<button (click)="onsend(inputname)">Send</button><br><br>
+
+<input #inputname1 type="text" placeholder="enter the name">
+&nbsp;&nbsp; &nbsp;
+<button (click)="onsend1(inputname1.value)">Send</button>
+
+<hr>
+
+<label for="">Num1::&nbsp;&nbsp;</label>
+<input #num1 type="text" placeholder="enter the number1"><br><br>
+
+<label for="">Num2::&nbsp;&nbsp;</label>
+<input #num2 type="text" placeholder="enter the number2"><br><br>
+
+<button (click)="onaddition(num1.value,num2.value)">Addition</button><br><br>
+<input type="text"[value]="result" placeholder="display result">
+<hr>
+<input #mydata type="text"placeholder="change event" (change)="onchange(mydata.value)">

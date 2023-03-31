@@ -1,11 +1,11 @@
 <p>fordirective works!</p>
 
-<ul>
+<!-- <ul>
     <li *ngFor="let item of course">
     {{item}}
 </li>
-</ul>
-<table>
+</ul> -->
+<!-- <table>
     <tr >
     <th>Sr No</th>
     <th>Product Name</th>
@@ -17,5 +17,27 @@
         <td>{{item.name}}</td>
         <td>{{item.price}}</td>
         <td>{{item.qty}}</td>
+    </tr>
+</table>  -->
+
+<table>
+    <tr>
+        <th>Sr No</th>
+<th>Product Name</th>
+<th>Product Price</th>
+<th>Product Quantity</th>
+    </tr>
+    <tr *ngFor="let data of arrproduct; index as
+    d"(mouseover)="onmouseover(data)" [ngClass]="{
+        'highlight':selected ===data.name
+        
+    }" (mouseout)="onmouseout()">
+        <td >{{d+1}}</td>
+        <td [ngClass]="{
+            'itemname':selected ===data.name
+        }">{{data.name}}</td>
+        <td  [ngClass]="{
+            'itemprice':selected ===data.name}">{{data.price}}</td>
+        <td>{{data.qty}}</td>
     </tr>
 </table>

@@ -1,0 +1,22 @@
+<p>chield works!</p>
+<h1>Data :: {{parentstrdata}}</h1>
+<h1>ID :: {{jsondata.id}}</h1>
+<h1>First Name :: {{jsondata.fname}}</h1>
+<h1>Role :: {{jsondata.role}}</h1>
+
+
+<table><tr>
+    <th>Sr NO</th>
+    <th>product name</th>
+    <th>prize</th>
+    <th>Quantity</th>
+</tr>
+<tr *ngFor="let item of arrobjdata;index as i ">
+    <td>{{i}}</td>
+    <td>{{item.product}}</td>
+    <td>{{item.prize}}</td>
+    <td>{{item.qty}}</td>
+   
+    <td></td>
+</tr>
+</table>

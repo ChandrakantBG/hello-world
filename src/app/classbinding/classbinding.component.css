@@ -1,0 +1,14 @@
+.success{
+    color:green;
+}
+.danger{
+    color: orange;
+}
+.warning{
+    color: red;
+}
+.special{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-size: 32px;
+}

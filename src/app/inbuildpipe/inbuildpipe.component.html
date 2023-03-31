@@ -1,0 +1,38 @@
+<p>inbuildpipe works!</p>
+<h1>{{strdata | lowercase}}</h1>
+<h1>{{strdata | uppercase}}</h1>
+<h1>{{strdata | titlecase}}</h1>
+<h1>{{strdata | slice :1:11}}</h1>
+<h6>{{strdata}}</h6>
+
+<h2>{{0.25 | percent}}</h2>
+<h2>{{0.025 | percent:'1.1'}}</h2>//2.5
+<h2>{{0.091 | percent:'1.1'}}</h2>//9.1
+<h2>{{0.092310 | percent:'4.3'}}</h2>//0092.310
+<h2>{{0.0091 | percent:'4.2'}}</h2>//0000.910
+
+<h2>{{0.25 | currency}}</h2>
+<h2>{{25 | currency:'INR'}}</h2>
+<h2>{{25 | currency:'INR ':'code'}}</h2>
+<h2>{{25 | currency:'GBP'}}</h2>
+
+<h2>{{5.6786454 | number:'1.2-3'}}</h2>
+<h2>{{5.67866454 | number:'1.2-3'}}</h2>
+<h2>{{5.6786454 | number:'2.2-3'}}</h2>
+<h2>{{5.6 | number:'2.2-3'}}</h2>
+<h2>{{5.6786454 | number:'2.4-6'}}</h2>//05.678645
+<h2>{{5.555556 | number:'2.2-3'}}</h2>//05.556
+<h2>{{65.678556 | number : '1.2-3'}}</h2>//65.679
+<h2>{{num2 | number:'2.2-3'}}</h2>//-452.79
+
+
+<h2>{{mydate}}</h2>
+<h2>{{mydate | date:'mediumDate'}}</h2>
+<h2>{{mydate | date:'shortDate'}}</h2>
+<h2>{{mydate | date:'dd-MM-YY'}}</h2>
+<h2>{{mydate | date:'dd'}}</h2>
+<h2>{{mydate | date:'MM'}}</h2>
+<h2>{{mydate | date:'YY'}}</h2>
+<h2>{{mydate | date:'longDate'}}</h2>
+<h2>{{mydate | date:'longDate' | uppercase}}</h2>
+<h2>{{mydate | date:'hh:mm:ss a'}}</h2>

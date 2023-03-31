@@ -40,10 +40,18 @@ export class FordirectiveComponent implements OnInit {
       qty:1
     },
     
+    
   ]
+  selected:string='';
   constructor() { }
 
   ngOnInit(): void {
   }
-
+  onmouseover(data:any){
+    console.log("mouseover event occure...")
+    this.selected=data.name;
+  }
+onmouseout(){
+  this.selected='';
+}
 }

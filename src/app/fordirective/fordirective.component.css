@@ -1,5 +1,27 @@
 table {
+    border-collapse: collapse;
+  }
+  
+  table td, table th {
     border: 1px solid black;
   }
+  .highlight{
+    background-color: green;
+    color: white;
+    
+  }
+  .itemname{
+
+    background-color: orange;
+    color:white;
+
+  }
+  .itemprice{
+    background-color: red;
+    color:black;
+
+  }
+  
+  
   
   

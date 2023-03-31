@@ -1,0 +1,38 @@
+<p>parent works!</p>
+<h2>{{strdatareceived}}</h2>
+<!-- <h1 *ngFor="let item of jsonobjreceved">{{jsonobjreceved}}</h1> -->
+<h1>{{jsonobjreceved.id}}</h1>
+<h1>{{jsonobjreceved.fname}}</h1>
+<h1>{{jsonobjreceved.role}}</h1>
+<hr>
+<table><tr>
+    <th>Sr NO</th>
+    <th>Product name</th>
+    <th>Prize</th>
+    <th>Quantity</th>
+</tr>
+<tr *ngFor="let item of arrdata;index as i ">
+    <td>{{i+1}}</td>
+    <td>{{item.product}}</td>
+    <td>{{item.prize}}</td>
+    <td>{{item.qty}}</td>
+   
+    <td></td>
+</tr>
+</table>
+<hr>
+<!-- <app-chield [parentstrdata]="strdata"
+            [jsondata]="jsonobj"
+            [arrobjdata]="arrdata"></app-chield> -->
+
+
+
+            
+
+
+            <app-chield2 (childstrevent)="strdatareceived=$event"
+            (childarrobjevent)="arrdata=$event"
+            (childdataevent)="jsonobjreceved=$event"></app-chield2>
+
+
+

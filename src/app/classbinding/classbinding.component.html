@@ -1,0 +1,11 @@
+<p>classbinding works!</p>
+<h1 [class]="myclass">
+    Apply class binding
+</h1>
+<h1 [class.danger]="rating<4"
+    [class.warning]="rating>4">
+    Apply class binding on conddition  
+</h1>
+<div [ngClass]="jsonobj">
+    Apply ngclass attribute directive 
+</div>
