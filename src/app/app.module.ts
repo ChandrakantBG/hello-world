@@ -21,6 +21,7 @@ import { ParentComponent } from './parent/parent.component';
 import { ChieldComponent } from './chield/chield.component';
 import { Chield2Component } from './chield2/chield2.component';
 import { InbuildpipeComponent } from './inbuildpipe/inbuildpipe.component';
+import { CustompipeComponent } from './custompipe/custompipe.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { InbuildpipeComponent } from './inbuildpipe/inbuildpipe.component';
     ParentComponent,
     ChieldComponent,
     Chield2Component,
-    InbuildpipeComponent
+    InbuildpipeComponent,
+    CustompipeComponent
   ],
   imports: [
     BrowserModule,
