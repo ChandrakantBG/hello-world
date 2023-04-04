@@ -22,6 +22,15 @@ import { ChieldComponent } from './chield/chield.component';
 import { Chield2Component } from './chield2/chield2.component';
 import { InbuildpipeComponent } from './inbuildpipe/inbuildpipe.component';
 import { CustompipeComponent } from './custompipe/custompipe.component';
+import { summarypipe } from './utility/summary.pipe';
+import { Custompipe2Component } from './custompipe2/custompipe2.component';
+import { sumaarypipe2 } from './summary1.pipe';
+import { CourseComponent } from './course/course.component';
+import { couresservice } from './utility/course.service';
+import { Course1Component } from './course1/course1.component';
+import { course1service } from './utility/course1.service';
+import { Course2Component } from './course2/course2.component';
+import { courseservices2 } from './utility/course2.service';
 
 @NgModule({
   declarations: [
@@ -43,14 +52,20 @@ import { CustompipeComponent } from './custompipe/custompipe.component';
     ChieldComponent,
     Chield2Component,
     InbuildpipeComponent,
-    CustompipeComponent
+    CustompipeComponent,
+    summarypipe,
+    Custompipe2Component,
+    sumaarypipe2,
+    CourseComponent,
+    Course1Component,
+    Course2Component
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [couresservice,course1service, courseservices2],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
