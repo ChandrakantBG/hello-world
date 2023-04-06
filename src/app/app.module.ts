@@ -31,6 +31,9 @@ import { Course1Component } from './course1/course1.component';
 import { course1service } from './utility/course1.service';
 import { Course2Component } from './course2/course2.component';
 import { courseservices2 } from './utility/course2.service';
+import { HttpClientModule} from '@angular/common/http';
+import { PostComponent } from './post/post.component';
+import { Post2Component } from './post2/post2.component';
 
 @NgModule({
   declarations: [
@@ -58,12 +61,15 @@ import { courseservices2 } from './utility/course2.service';
     sumaarypipe2,
     CourseComponent,
     Course1Component,
-    Course2Component
+    Course2Component,
+    PostComponent,
+    Post2Component
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [couresservice,course1service, courseservices2],
   bootstrap: [AppComponent]
