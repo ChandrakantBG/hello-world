@@ -35,7 +35,9 @@ let obj={
 this.service.postdata(obj)
 .subscribe((respons)=>{
   console.log(respons)
-})
+},((myerror)=>{
+  alert('error is occure');
+}))
 }
 onedit(item:any){
 console.log(item);
@@ -52,6 +54,7 @@ onupdate(){
 }
 this.service.updatedata(obj).subscribe((response)=>{
   console.log(response);
+  this.ishidden=true;
 })
 }
 ondelete(id:any){

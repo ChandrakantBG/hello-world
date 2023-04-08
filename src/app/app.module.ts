@@ -34,6 +34,14 @@ import { courseservices2 } from './utility/course2.service';
 import { HttpClientModule} from '@angular/common/http';
 import { PostComponent } from './post/post.component';
 import { Post2Component } from './post2/post2.component';
+import { HomeComponent } from './home/home.component';
+import { Page1Component } from './page1/page1.component';
+import { Page2Component } from './page2/page2.component';
+import { Page3Component } from './page3/page3.component';
+import { FollowerComponent } from './follower/follower.component';
+import { MyfollowerComponent } from './myfollower/myfollower.component';
+import { QueryparameterComponent } from './queryparameter/queryparameter.component';
+import { NotfoundComponent } from './notfound/notfound.component';
 
 @NgModule({
   declarations: [
@@ -63,7 +71,15 @@ import { Post2Component } from './post2/post2.component';
     Course1Component,
     Course2Component,
     PostComponent,
-    Post2Component
+    Post2Component,
+    HomeComponent,
+    Page1Component,
+    Page2Component,
+    Page3Component,
+    FollowerComponent,
+    MyfollowerComponent,
+    QueryparameterComponent,
+    NotfoundComponent
   ],
   imports: [
     BrowserModule,

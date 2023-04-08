@@ -52,7 +52,6 @@ onupdate(){
     title:this.title,
     body:this.body
     
-
   }
   this.service.updatedata(obj).subscribe((response)=>{
     console.log(response);
