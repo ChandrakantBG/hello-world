@@ -1,0 +1,82 @@
+<p>formcontrol works!</p>
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <form #f="ngForm" (ngSubmit)="onsubmit(f)">
+                {{f.value | json}}
+        <div class="form-group"> 
+        <label for="" >Username::</label>
+        <input type="text" minlength="5" class="form-control"
+        pattern="admin" placeholder="Enter the username" ngModel name="myusername" #username="ngModel" required>
+    <div class="alert alert-danger"
+    *ngIf="username.touched && !username.valid">
+     ** please enter the username
+
+     <div *ngIf="username.errors?.minlength">
+     ** please enter the minimum length of {{username.errors?.minlength?.requiredLength}} character
+     </div>
+     <div *ngIf="username.errors?.pattern"> **please enter the carrect pattern
+    </div>
+     </div>
+    </div>
+
+     <div class="form-group">
+        <label for="">Comment::</label>
+        <textarea ngModel #comment="ngModel" required placeholder="Enter the textarea..."
+         class="form-control" name="comment" id="" cols="30" rows="10"></textarea>
+         <div class="alert alert-danger" *ngIf="comment.touched && comment.invalid">** please enter the comment...
+
+         
+         </div>
+    </div>
+
+
+<div class="checkbox">
+    <label for="check1">
+    <input type="checkbox" id="check1"
+    ngModel name="issubscribed"
+    #mail="ngModel" required> i Agree All the Terms & conditions.
+</label>
+</div>
+
+<div class="radio">
+    <label for="con0">
+        <input ngModel #contact="ngModel" type="radio" name="con" id="con0" value="email" required>Email
+    </label>
+</div>
+
+<div class="radio">
+    <label for="con1">
+        <input ngModel #contact="ngModel" type="radio" name="con" id="con1" value="phone" required>Phone
+    </label>
+</div>
+
+<div class="form-group">
+    <label for="country">Country </label>
+    <select ngModel name="country" id="country" class="form-control" required>
+
+       <!-- <option *ngFor="let item of country" [value]="item.cid">{{item.name}}</option> -->
+
+        <option *ngFor="let item of country" [ngValue]="item">{{item.name}}</option>
+
+    </select>
+</div>
+
+<div class="form-group">
+    <label for="myemail">Email Id::</label>
+    <input ngModel #email="ngModel" type="email" name="email" id="myemail" class="form-control" placeholder="Enter the email ID..." [pattern]="Email_pattern" required >
+
+     <div class="alert alert-danger" *ngIf="comment.touched && !email.valid">** please enter the email...
+<div *ngIf="email.errors?.pattern">**please enter the appropriate email id
+
+</div>
+     
+     </div></div>
+
+    <button [disabled]="!f.valid" class="btn btn-outline-success">Submit</button>
+</form>
+    </div>
+    </div>
+
+</div>

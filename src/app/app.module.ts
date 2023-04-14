@@ -42,6 +42,8 @@ import { FollowerComponent } from './follower/follower.component';
 import { MyfollowerComponent } from './myfollower/myfollower.component';
 import { QueryparameterComponent } from './queryparameter/queryparameter.component';
 import { NotfoundComponent } from './notfound/notfound.component';
+import { DemoBootstrapComponent } from './demo-bootstrap/demo-bootstrap.component';
+import { FormcontrolComponent } from './formcontrol/formcontrol.component';
 
 @NgModule({
   declarations: [
@@ -79,7 +81,9 @@ import { NotfoundComponent } from './notfound/notfound.component';
     FollowerComponent,
     MyfollowerComponent,
     QueryparameterComponent,
-    NotfoundComponent
+    NotfoundComponent,
+    DemoBootstrapComponent,
+    FormcontrolComponent
   ],
   imports: [
     BrowserModule,

@@ -8,12 +8,14 @@ import { UpdateuserComponent } from './updateuser/updateuser.component';
 import { DeleteuserComponent } from './deleteuser/deleteuser.component';
 
 
+
 @NgModule({
   declarations: [
     ListuserComponent,
     AdduserComponent,
     UpdateuserComponent,
-    DeleteuserComponent
+    DeleteuserComponent,
+   
   ],
   imports: [
     CommonModule,
